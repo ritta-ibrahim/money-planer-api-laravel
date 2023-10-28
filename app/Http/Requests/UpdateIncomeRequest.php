@@ -22,7 +22,9 @@ class UpdateIncomeRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            "title" => "required",
+            "amount" => "required",
+            "currency_id" => "required|exists:currencies,id",
         ];
     }
 }

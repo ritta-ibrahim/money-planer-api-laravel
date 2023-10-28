@@ -22,7 +22,9 @@ class StoreCurrencyRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            "name" => "required",
+            "code" => "required",
+            "exchange" => "required",
         ];
     }
 }
