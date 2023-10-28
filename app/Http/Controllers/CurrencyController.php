@@ -2,15 +2,15 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Resources\CurrencyResourse;
-use App\Models\Currency;
 use App\Http\Requests\StoreCurrencyRequest;
 use App\Http\Requests\UpdateCurrencyRequest;
+use App\Http\Resources\CurrencyResourse;
+use App\Models\Currency;
 use Illuminate\Http\Response;
 
 class CurrencyController extends Controller
 {
-     /**
+    /**
      * Display a listing of the resource.
      * @return \Illuminate\Http\JsonResponse
      */
