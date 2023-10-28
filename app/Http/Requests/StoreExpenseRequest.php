@@ -22,7 +22,10 @@ class StoreExpenseRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            "title" => "required",
+            "amount" => "required",
+            "currency_id" => "required|exists:currencies,id",
+            "category_id" => "required|exists:categories,id",
         ];
     }
 }

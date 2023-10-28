@@ -21,8 +21,10 @@ class UpdateCurrencyRequest extends FormRequest
      */
     public function rules(): array
     {
-        return [
-            //
+        return [            
+            "name" => "required",
+            "code" => "required",
+            "exchange" => "required",
         ];
     }
 }
