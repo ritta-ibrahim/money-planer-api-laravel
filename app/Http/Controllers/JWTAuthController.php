@@ -58,7 +58,6 @@ class JWTAuthController extends Controller
             'email' => 'required',
             'password' => 'required',
         ]);
-        dd("dd");
         $credentials = request(['email', 'password']);
         if (!$token = auth('api')->attempt($credentials)) {
             return response()->json(['error' => 'Unauthorized'], 401);

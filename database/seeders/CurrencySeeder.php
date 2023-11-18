@@ -18,11 +18,6 @@ class CurrencySeeder extends Seeder
                 "code" => "USD",
                 "exchange" => 1,
             ],
-            [
-                "name" => "Pound",
-                "code" => "SP",
-                "exchange" => 1,
-            ],
         ];
 
         foreach ($currencies as $currency) {
