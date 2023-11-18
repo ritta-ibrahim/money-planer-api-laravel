@@ -6,7 +6,6 @@ use App\Http\Requests\StoreIncomeRequest;
 use App\Http\Requests\UpdateIncomeRequest;
 use App\Http\Resources\IncomeResourse;
 use App\Models\Income;
-use Illuminate\Http\Response;
 
 class IncomeController extends Controller
 {
